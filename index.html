@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,10 @@
     <audio id="startupsfx">
         <source src="SFX/win98.mp3">
         Your browser does not support the audio element.
+    </audio>
+    <audio id="bgmusic" loop>
+        <source src="SFX/Twisted Metal 2 Soundtrack - Moscow.mp3">
+        Your browser does not support audio element.
     </audio>
     <div id="splash">
         <p style="position: relative; margin-top: 100px;">
@@ -50,9 +54,30 @@
                 <a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/zc.php?d=6&id=1270&s=1' border='0' alt='Free Website Hit Counter'></a>
             </div>
             <div class="divider"></div>
+            <div class="navbar">
+                <div class="navlink">
+                    <img src="Images/thing2.gif"> <a href="">Shrines</a>
+                </div>
+                <div class="navlink">
+                    <img src="Images/thing2.gif"> <a href="">Gry</a>
+                </div>
+                <div class="navlink">
+                    <img src="Images/thing2.gif"> <a href="">Sprzet</a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="player">
+                <img src="Images/music_17.gif" onclick="toggleBackgroundMusic()"><br>
+                <span class="tip">nacisnij gramofon</span>
+            </div>
+            <div class="divider"></div>
+            <div class="rpoke">
+                <div id="pokemon-container"></div>
+            </div>
         </div>
     </div>
     <script src="JS/music.js"></script>
     <script src="JS/cursor.js"></script>
+    <script src="JS/pokemon.js"></script>
 </body>
 </html>

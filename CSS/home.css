@@ -2,6 +2,9 @@
     --yellow: #FFC72C;
     --blue: #0077c0;
     --purple: #9A4EAE;
+    --green: #1B4D3E;
+    --lime: #32de84;
+    --orange: #E97451;
 }
 
 body {
@@ -99,4 +102,76 @@ header {
     color: white;
     font-weight: bolder;
     font-style: oblique;
+}
+
+.navlink {
+    line-height: 20px;
+    font-size: 15px;
+    display: block;
+}
+
+.navbar {
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--lime);
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+.player {
+    padding: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.player img {
+    width: 69px;
+    height: 90px;
+}
+
+.tip {
+    color: rgba(255,40,40,0.4);
+    font-size: 12px;
+    font-style: oblique;
+    font-weight: 100;
+}
+
+#pokemon-container {
+    text-align: center;
+    color: var(--lime);
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+.pokemon-image {
+    border: 3px var(--yellow) solid;
+    width: 160px;
+    height: 160px;
+}
+
+.pokemon-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.rpoke { padding: 3px;}
+
+.rpoke h2 {
+    font-size: 20px;
+    color: var(--green);
+    font-style: oblique;
+    text-align: center;
 }
