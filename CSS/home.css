@@ -54,6 +54,7 @@ header {
     background-color: var(--purple);
     border-right: 3px var(--yellow) solid;
     border-spacing: 0px;
+    float: left;
 }
 
 .logo-container {
@@ -160,6 +161,7 @@ a:hover {
     border: 3px var(--yellow) solid;
     width: 160px;
     height: 160px;
+    background-color: var(--green);
 }
 
 .pokemon-name {
@@ -174,4 +176,26 @@ a:hover {
     color: var(--green);
     font-style: oblique;
     text-align: center;
+}
+
+.m {
+    width: 1280px;
+    height: 100%;
+    /*background-color: blue;*/
+    margin-left: 210px;
+}
+
+.inner {
+    width: 97%;
+    height: 97%;
+    padding: 10px;
+    background-color: springgreen;
+    margin: 0 auto;
+}
+
+.box {
+    display: inline;
+    box-sizing: border-box;
+    border: 3px var(--yellow) solid;
+    border-spacing: 0px;
 }
