@@ -2,9 +2,11 @@
     --yellow: #FFC72C;
     --blue: #0077c0;
     --purple: #9A4EAE;
+    --pink: #F2C1D1;
     --green: #1B4D3E;
     --lime: #32de84;
     --orange: #E97451;
+    --coral: #F94D00;
 }
 
 body {
@@ -24,13 +26,17 @@ header {
     height: 100vh;
     background-color: rgba(255,255,255,0.4);
     margin: 0 auto;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
 }
 
 #splash p {
     text-align: center;
-    justify-content: center;
-    align-items: center;
     color: white;
     font-size: 40px;
 }
@@ -43,7 +49,6 @@ header {
     margin-right: auto;
     background-color: var(--blue);
     border: 3px var(--yellow) solid;
-    border-spacing: 0px;
     z-index: 10;
 }
 
@@ -53,7 +58,6 @@ header {
     z-index: 11;
     background-color: var(--purple);
     border-right: 3px var(--yellow) solid;
-    border-spacing: 0px;
     float: left;
 }
 
@@ -183,19 +187,67 @@ a:hover {
     height: 100%;
     /*background-color: blue;*/
     margin-left: 210px;
+    display: flex;
+    justify-content: center;
 }
 
 .inner {
-    width: 97%;
-    height: 97%;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
     background-color: springgreen;
-    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    position: relative;
 }
 
-.box {
-    display: inline;
-    box-sizing: border-box;
+.left {
+    flex: 1 1 410px;
+    min-width: 410px;
+    background-color: blue;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+}
+
+.middle {
+    flex: 1 1 410px;
+    min-width: 410px;
+    background-color: palegoldenrod;
+    height: 100%;
+}
+
+.right {
+    flex: 1 1 410px;
+    min-width: 410px;
+    background-color: aquamarine;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+}
+
+#welcome-mat {
+    width: 400px;
+    height: 220px;
+    padding: 5px;
+    background-image: url("../Images/Backgrounds/Mj5Qnpa.gif");
+    position: relative;
     border: 3px var(--yellow) solid;
-    border-spacing: 0px;
+    margin-top: 5px;
+}
+
+#welcome-mat h2 {
+    margin-left: 7px;
+    color: var(--coral);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#welcome-mat p { color: var(--coral);}
+
+#gify {
+    width: 314px;
+    height: 321px;
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/shared.css">
     <link rel="stylesheet" type="text/css" href="CSS/home.css">
     <link rel="icon" type="image/x-icon" href="Images/modem-4.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <audio id="startupsfx">
@@ -20,8 +21,8 @@
     </audio>
     <div id="splash">
         <p style="position: relative; margin-top: 100px;">
-            nacisnij gdzies na ekranie<br>
-            jest to potrzebne by kod poprawnie dzialal.
+            click me<br>
+            it is required to make the code fully work!
         </p>
     </div>
     <header></header>
@@ -50,7 +51,7 @@
             </div>
             <div class="divider"></div>
             <div class="counter">
-                <p>gratulacje jestes odwiedzajacym nr.:</p>
+                <p>congrats you are visitor no. :</p>
                 <a href='https://www.free-website-hit-counter.com'><img src='https://www.free-website-hit-counter.com/zc.php?d=6&id=1270&s=1' border='0' alt='Free Website Hit Counter'></a>
             </div>
             <div class="divider"></div>
@@ -59,16 +60,16 @@
                     <img src="Images/thing2.gif"> <a href="">Shrines</a>
                 </div>
                 <div class="navlink">
-                    <img src="Images/thing2.gif"> <a href="">Gry</a>
+                    <img src="Images/thing2.gif"> <a href="">Games</a>
                 </div>
                 <div class="navlink">
-                    <img src="Images/thing2.gif"> <a href="">Sprzet</a>
+                    <img src="Images/thing2.gif"> <a href="">Hardware</a>
                 </div>
             </div>
             <div class="divider"></div>
             <div class="player">
                 <img src="Images/music_17.gif" onclick="toggleBackgroundMusic()"><br>
-                <span class="tip">nacisnij gramofon</span>
+                <span class="tip">click gramophone</span>
             </div>
             <div class="divider"></div>
             <div class="rpoke">
@@ -77,12 +78,32 @@
         </div>
         <div class="m">
             <div class="inner">
-                <div class="box" id="landingmat"></div>
+                <div class="left">
+                    <div id="welcome-mat">
+                        <img src="Images/hello1.gif" style="position: absolute; top: 0; left: 350px;">
+                        <h2 class="welcome-text">hi</h2>
+                        <p>
+                            Welcome dear internet user! Its pleasure to meet you in my cave!. I created this place because I got sick of the Internet being commercialized and censored. Every website is generic nowadays, so thats why I am creating one!.. I mean its not only for that. I just want to have fun. Report issues/bugs on github!
+                        </p>
+                        <p style="text-decoration: underline; font-style: oblique;">
+                            Turn off your adblocker it may broke some js code.
+                        </p>
+                    </div>
+                </div>
+                <div class="middle"></div>
+                <div class="right"></div>
+                <!--<div class="box leftbox" id="landingmat">
+                    
+                </div>
+                <div class="box" id="gify">
+                    <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=weezer&dob=1731430864&gender=m&element=Air&pet=https%3A%2F%2Fi.imgur.com%2FwyEfHW0.gif&map=ozwomp.jpg&background=1995.png&tablecolor=%23f74a4f&textcolor=%23000000" frameborder="0"></iframe>
+                </div>-->
             </div>
         </div>
     </div>
     <script src="JS/music.js"></script>
     <script src="JS/cursor.js"></script>
     <script src="JS/pokemon.js"></script>
+    <script src="JS/welcome.js"></script>
 </body>
 </html>
